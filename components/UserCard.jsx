@@ -1,4 +1,5 @@
 import { deafult_img, default_banner } from "../assets";
+import { StarIcon } from "@heroicons/react/24/outline";
 
 const UserCard = ({ user_img, banner }) => {
   return (
@@ -14,11 +15,7 @@ const UserCard = ({ user_img, banner }) => {
         />
       </div>
       <div className="relative p-4">
-        <ion-icon
-          name="star-outline"
-          className="absolute text-2xl cursor-pointer text-sky-900 right-4 top-4"
-        ></ion-icon>
-        {/* {<ion-icon name="star"></ion-icon>} */}
+        <StarIcon className="absolute text-2xl cursor-pointer text-sky-900 right-4 top-4 h-6 w-6" />
         <h2 className="mt-2 text-2xl font-bold leading-[1]">publikphigor</h2>
         <h3 className="mt-1 mb-2 text-gray-400 leading-[1]">@publikphigor</h3>
         <p className="leading-[1.5] text-gray-500">
