@@ -1,18 +1,14 @@
-import React from "react";
+import { deafult_img, default_banner } from "../assets";
 
-const UserCard = () => {
+const UserCard = ({ user_img, banner }) => {
   return (
     <div className="bg-white shadow">
       <div className="relative w-full h-[100px]">
         <div className="w-full h-full overflow-hidden">
-          <img
-            src="assets/wordpress.png"
-            alt="User Profile Banner"
-            className="object-cover w-full"
-          />
+          <img src={default_banner} alt="User Profile Banner" className="object-cover w-full" />
         </div>
         <img
-          src="assets/Koladele-Olaitan.png"
+          src={deafult_img}
           alt="User Profile Picture"
           className="absolute z-10 w-12 h-12 rounded-full -bottom-5 left-5"
         />

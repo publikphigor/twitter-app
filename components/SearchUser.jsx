@@ -10,7 +10,10 @@ const SearchUser = () => {
           id="username"
           className="w-full px-8 py-3 border rounded-xl"
         />
-        <label for="username" className="absolute text-gray-500 -translate-y-1/2 top-1/2 left-3">
+        <label
+          htmlFor="username"
+          className="absolute text-gray-500 -translate-y-1/2 top-1/2 left-3"
+        >
           @
         </label>
       </div>
