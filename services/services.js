@@ -7,6 +7,8 @@ const client = new TwitterClient({
   accessTokenSecret: `${process.env.TOKEN_SECRET}`,
 });
 
+console.log(client);
+
 export const getTweet = async function () {
   try {
     const tweet = await client.accountsAndUsers.usersSearch({ q: "publikphigor" });

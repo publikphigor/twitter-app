@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import client, { getTweet } from "../services/services";
 
-console.log(getTweet());
+//console.log(getTweet());
 
 const SearchUser = () => {
   return (
